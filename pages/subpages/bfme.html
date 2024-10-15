@@ -1,0 +1,28 @@
+<div class="project-column">
+    <h1>BFME Reforged</h1>
+    BFME Reforged is a Fan project that I used to contribute to.
+    It is a Unreal Engine RTS game incorporating base building, unit production and combat.
+    <br><br>
+    I have learned Unreal Engine to be able to contribute to this project and then I progressed to solving more complex problems.
+    <br><br>
+    This game is written to support thousands of units at 60fps. I have spent a lot of time figuring out how to
+    utilize unreal systems to be able to do so. The units work similary to boids, their actions are dynamically calculated
+    in the mass system using a set of modular "rules" for each entity.
+    <br><br>
+    <img class="" src="images/2000units.webp">
+    <br><br>
+    One of the bigger things I've managed to solve is how to generate a 2d collision ( Units work on a 2D plane ) for entities,
+    to make it cheaper.
+    I've done so by taking all of the vertices of a 3D entity, clamping a range and removing all unneeded
+    vertices and then using 2D convex hull alghoritm to trim all the innermost points.
+    Produced 2D polygon can be shrunk or expanded by using imported part of Clipper2 library.
+    All of it is configurable within editor.
+    <br><br>
+    <img src="images/InformationCollision.webp">
+    <img src="images/collisioncode.webp">
+    <br><br>
+    I've collaborated with an audio designer by creating an easy way for him to add different sounds to an entity.
+    <br><br>
+    <img src="images/AudioSetup.webp">
+    <img src="images/SoundSetup.webp">
+</div>
