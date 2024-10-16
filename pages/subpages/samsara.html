@@ -2,13 +2,16 @@
     <h1>Samsara Saga</h1>
     Upcoming mmorpg unreal engine 5 game, that I'm working on currently.
     <br><br>
-    I'am working on modifying OWS2 server and plugin in C# and C++, for our own needs and generally on implementation of mmorpg systems using unreal Replication and GAS.
+    I'am working on modifying our own fork of <a href="https://github.com/Dartanlla/OWS">OWS</a> server and plugin in C# and C++, for our own needs and generally on implementation of mmorpg gameplay systems using unreal Replication and GAS.
     The game uses Paper2D sprites which are manually rotated towards camera, they have 8 axis direction.
-    <br>
-    <br>
+    <br><br>
     <iframe width="764" height="498" src="https://www.youtube.com/embed/9DOhFXO9ROE" title="Inventory system - Samsara Saga" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <br>
-    <br>
+    <br><br>
+    OWS plugin allows us to automatically create instances of dedicated server, and to setup and communicate with Database. In this project it was my first time using dedicated server and there are interesting quirks
+     whicht show up
+    when you use it instead of just testing the game on Client mode. For example we have DamagaText widgets, and they get created from a widget blueprint on the server, while this
+    works on unreal client mode, the dedicated server doesn't see blueprint associated with that widget and the widget doesn't get created.
+    <br><br>
     This project has a pretty big scope, so teamwork and work organization is really important for efficiency sake.
     To accomplish that efficiency it is essential to employ tools such as Miro or similar for managing tasks for each team.
     I'am managing tasks and reviewing code according to Unreal Engine standards for the dev team.
@@ -20,5 +23,9 @@
     <a href="https://benui.ca/unreal/2024-coding-standard/">https://benui.ca/unreal/2024-coding-standard/</a>
     <br><br>
     <img class="" src="images/MiroTasks.webp">
+    <br><br>
+    Sample of character sprite (not completed) and basic combat + picking up items.
+    <br><br>
+    <iframe width="764" height="498" src="https://www.youtube.com/embed/DTir7NjzfUc" title="UnrealEngine Sprite battle test multiplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </div>
