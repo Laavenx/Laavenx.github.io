@@ -1,8 +1,15 @@
 <div class="project-column">
     <h1>SEDB</h1>
     A website made using Svelte framework that I've made in the past, serving as a source of information about entities from Space Engineers.
-    The website uses SQlite to store information about entities. The database was created using python script, converting the game .xml files.
+    The website uses SQlite to store information about entities. The database was created using a python script, converting the game .xml files.
     <br><br>
     <iframe width="764" height="498" src="https://www.youtube.com/embed/gNf4sStF7o0" title="Website showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+    <br><br>
+    Server script loads data from SQlite using sequelize ORM. The data gets passed to appropriate component, where the it gets injected;
+    <br><br>
+    <img class="hoverable" src="images/Svelte.webp"></a>
+    <br><br>
+    The project implements lazy loading of only visible items, which makes it friendly for low bandwidth connections.
+    <br><br>
+    <img class="hoverable" src="images/Observer.webp"></a>
 </div>

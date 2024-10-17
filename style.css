@@ -154,3 +154,14 @@ hr {
         font-size: 33px;
     }
 }
+
+li { text-align: left;}
+
+.hoverable {
+    outline: 1px solid grey;
+    transition: transform .2s;
+}
+
+.hoverable:hover {
+    transform: scale(1.4);
+}

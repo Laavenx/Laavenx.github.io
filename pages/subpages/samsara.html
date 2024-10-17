@@ -12,17 +12,17 @@
     when you use it instead of just testing the game on Client mode. For example we have DamagaText widgets, and they get created from a widget blueprint on the server, while this
     works on unreal client mode, the dedicated server doesn't see blueprint associated with that widget and the widget doesn't get created.
     <br><br>
-    This project has a pretty big scope, so teamwork and work organization is really important for efficiency sake.
-    To accomplish that efficiency it is essential to employ tools such as Miro or similar for managing tasks for each team.
-    I'am managing tasks and reviewing code according to Unreal Engine standards for the dev team.
-    <br>
-    <a href="https://github.com/Allar/ue5-style-guide#structure">https://github.com/Allar/ue5-style-guide#structure</a>
-    <br>
-    <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine">https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine</a>
-    <br>
-    <a href="https://benui.ca/unreal/2024-coding-standard/">https://benui.ca/unreal/2024-coding-standard/</a>
+    <h2>Some things I've implemented:</h2>
+    <ul>
+        <li>Setup character Paper2D sprites to have separate body and head (head gets attached to socket) so that we can rotate them separately.</li>
+        <li>Implement target selection.</li>
+        <li>Picking up mob drops.</li>
+        <li>Implement OWS features like login and portals</li>
+    </ul>
     <br><br>
-    <img class="" src="images/MiroTasks.webp">
+    It is difficult to work with replication, my current strategy is to check what is happening inside of a function with HasAuthority() or GetNetMode().
+    I have to maintain OWS fork, because we want new features from main branch. That includes fixing queries and merging incompatible code. 
+    Unreal has issues with not updating binary files sometimes and its not uncommon for me to re-launch a dedicated server in dev, to find out that it's using old code.
     <br><br>
     Sample of character sprite (not completed) and basic combat + picking up items.
     <br><br>

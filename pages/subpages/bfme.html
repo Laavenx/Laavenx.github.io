@@ -6,10 +6,25 @@
     I have learned Unreal Engine to be able to contribute to this project and then I progressed to solving more complex problems.
     <br><br>
     This game is written to support thousands of units at 60fps. I have spent a lot of time figuring out how to
-    utilize unreal systems to be able to do so. The units work similary to boids, their actions are dynamically calculated
+    utilize unreal systems to be able to do so. The units are contained within a Battalion which has a set formation. They work similary to Boids, their actions are dynamically calculated
     in the mass system using a set of modular "rules" for each entity.
     <br><br>
-    <img class="" src="images/2000units.webp">
+    <h2>Some things I've implemented:</h2>
+    <ul>
+        <li>Playing select sounds, unit movement sounds, spawn sounds.</li>
+        <li>Performant way of selecting units</li>
+        <li>Octree for buildings to cull what Mass Entity System is iterating over.</li>
+        <li>Boid avoidance and collision against buildings using my own generated 2D collision.</li>
+        <li>Improved existing Boid movement by refactoring it to closely follow given path making it execute "IsBoidLate" logic to accelerate towards its Battalion.
+            Added "LostBoid" logic which makes the unit go at full speed through it's own, newly created control points in order to reach the Battalion ( It's an edge case that shouldn't happen very often ).
+             I also added a StateTree Task for when Battalion spawns and exits building (has to have collision turned off and reach a proper spot).
+        </li>
+        <li>Builder ability to construct new buildings</li>
+    </ul>
+    <br><br>
+    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7136040369867137025" width="764" height="498" frameborder="0" allowfullscreen="" title="Embedded post" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <br><br>
+    <img class="hoverable" src="images/2000units.webp">
     <br><br>
     One of the bigger things I've managed to solve is how to generate a 2d collision ( Units work on a 2D plane ) for entities,
     to make it cheaper.
@@ -18,11 +33,11 @@
     Produced 2D polygon can be shrunk or expanded by using imported part of Clipper2 library.
     All of it is configurable within editor.
     <br><br>
-    <img src="images/InformationCollision.webp">
-    <img src="images/collisioncode.webp">
+    <img class="hoverable" src="images/InformationCollision.webp">
+    <img class="hoverable" src="images/collisioncode.webp">
     <br><br>
     I've collaborated with an audio designer by creating an easy way for him to add different sounds to an entity.
     <br><br>
-    <img src="images/AudioSetup.webp">
-    <img src="images/SoundSetup.webp">
+    <img class="hoverable" src="images/AudioSetup.webp">
+    <img class="hoverable" src="images/SoundSetup.webp">
 </div>

@@ -1,6 +1,6 @@
 <div class="project-column">
     <h1>BattleChant</h1>
-    Unreal Engine Turn-based game in pre-release state. The game is made purely using blueprints currently.
+    Unreal Engine Turn-based game in pre-release state. The game is made purely using Blueprints currently.
     <br><br>
     <iframe width="764" height="498"
      src="https://www.youtube.com/embed/reWyYVIh_u4"
@@ -8,11 +8,20 @@
        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
     <br><br>
-    Using delegates in blueprints to change UI state:
+    <h2>Some of the things that I've implemented:</h2>
+    <ul>
+        <li>Designed a system which makes it possible for a writer to be able to create their own dialogues. I accomplished this by creating a FRowType which can hold Text, SoundWave and character portrait as Texture2D.
+            This then can be loaded sequentially using DataTable by the Dialogue UI Blueprint.</li>
+        <li>Changed Turn Based System to give priority of action consecutively for example: player takes action with all of their units and then enemy does the same.</li>
+        <li>Player being able to freely pick which unit to take action with during consecutive turns.</li>
+        <li>Implemented combat stats and calculations according to GDD</li>
+    </ul>
     <br><br>
-    <img src="images/blueprintinterface.webp">
+    Using delegates in Blueprints to change UI State:
     <br><br>
-    Part of damage calculations in blueprints:
+    <img class="hoverable" src="images/blueprintinterface.webp">
     <br><br>
-    <img src="images/blueprintdamage.webp">
+    Part of damage calculations in Blueprints:
+    <br><br>
+    <img class="hoverable" src="images/blueprintdamage.webp">
 </div>
