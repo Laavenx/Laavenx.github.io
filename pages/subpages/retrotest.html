@@ -1,12 +1,22 @@
 <div class="project-column">
     <h1>Retro Test</h1>
     A project developed to demonstrate creation of 3D platformer using GAS and custom movement in UE5.
-    <br><br>
     <a href="https://github.com/Laavenx/RetroTest">https://github.com/Laavenx/RetroTest</a>
+    <ul>
+        <li>Custom MovementComponent changes gravity based on timeline curve per tick, for jumping and falling.</li>
+        <li>Player input is checked for preemtive jump input, to perform auto-jump so that player can chain jumps more easily</li>
+        <li>Array of Structs storing angle and magnitude, determines how consecutive jumps behave.</li>
+        <li>Adding impulse is done using MultiCast RPC to keep it in sync with the server</li>
+    </ul>
+    <IMG width="764" height="498" SRC="Gifs/Animation.gif">
     <br><br>
+    <ul>
+        <li>AttributeSet keeps track of received damage and responds accordinly applying knockback or destroying the owner</li>
+        <li>Array of Structs storing angle and magnitude, determines how consecutive jumps behave.</li>
+        <li>Adding impulse and changing gravity is done using MultiCast RPC to keep it in sync with the server</li>
+        <li>Movement and rotation of platforms are replicated using RPC called on server which uses MoveComponentTo (Interpolates the movement)</li>
+    </ul>
     <iframe width="764" height="498" src="https://www.youtube.com/embed/eYrbjbskI8c" title="UnrealEngine RetroTest combat GAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <br><br>
-    Full implementation of GAS combat, using AI, reactive UI with healthbar and a Cooldown for Ability, Knockback effect from enemy. The slime character also has custom Blob Shadow.
     <br><br>
     <img class="hoverable" src="images/HealthChange.webp">
     <img class="hoverable" src="images/CooldownUI.webp">
@@ -15,7 +25,4 @@
     <br><br>
     <img class="hoverable" src="images/Sweep.webp">
     <br><br>
-    Custom movement which changes gravity using timelines and applies impulse, replicated in multiplayer.
-    <br><br>
-    <IMG width="764" height="498" SRC="Gifs/Animation.gif">
 </div>

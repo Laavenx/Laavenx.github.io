@@ -1,3 +1,4 @@
+
 function DisplayContextSwitcher(context) {
   fetch("pages/" + context +".html")
   .then((response) => response.text())
