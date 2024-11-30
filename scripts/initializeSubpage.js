@@ -1,6 +1,4 @@
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const initialPage = urlParams.get('page')
+const initialPage = urlParams.get('subpage')
 
 if (initialPage) {
     ProjectDisplayContextSwitcher(initialPage)
