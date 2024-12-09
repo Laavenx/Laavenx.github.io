@@ -5,7 +5,7 @@
     I'am working on modifying our own fork of <a href="https://github.com/Dartanlla/OWS">OWS</a> server and plugin in C# and C++, for our own needs and generally on implementation of mmorpg gameplay systems using unreal Replication and GAS.
     The game uses Paper2D sprites which are manually rotated towards camera, they have 8 axis direction.
     <br><br>
-    <iframe width="764" height="498" src="https://www.youtube.com/embed/9DOhFXO9ROE" title="Inventory system - Samsara Saga" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <IMG class="image" SRC="Gifs/Inventory.gif">
     <br><br>
     OWS plugin allows us to automatically create instances of dedicated server, and to setup and communicate with Database. In this project it was my first time using dedicated server and there are interesting quirks
      whicht show up
@@ -13,6 +13,7 @@
     works on unreal client mode, the dedicated server doesn't see blueprint associated with that widget and the widget doesn't get created.
     <br><br>
     <h2>Some things I've implemented:</h2>
+    <br><br>
     <ul>
         <li>Setup character Paper2D sprites to have separate body and head (head gets attached to socket) so that we can rotate them separately.</li>
         <li>Implement target selection.</li>
@@ -25,6 +26,7 @@
     Unreal has issues with not updating binary files sometimes and its not uncommon for me to re-launch a dedicated server in dev, to find out that it's using old code.
     <br><br>
     I'am also organizing developement tasks:
+    <br><br>
     <img class="hoverable" src="images/MiroTasks.webp">
     <br><br>
     Sample of character sprite (not completed) and basic combat + picking up items.

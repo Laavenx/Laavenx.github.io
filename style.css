@@ -95,7 +95,8 @@ hr {
 }
 
 .project-image-wrapper:hover {
-    box-shadow: 0 0 25px rgb(176, 11, 11);
+    box-shadow: 0 0 50px rgb(176, 11, 11);
+    border-color: rgb(176, 11, 11);
 }
 
 .project-image-wrapper {
@@ -164,4 +165,8 @@ li { text-align: left;}
 
 .hoverable:hover {
     transform: scale(1.4);
+}
+
+.image {
+    width: 84.2% !important;
 }

@@ -15,7 +15,7 @@
         <li>Performant way of selecting units</li>
         <li>Octree for buildings to cull what Mass Entity System is iterating over.</li>
         <li>Boid avoidance and collision against buildings using my own generated 2D collision.</li>
-        <li>Improved existing Boid movement by refactoring it to closely follow given path making it execute "IsBoidLate" logic to accelerate towards its Battalion.
+        <li>Improved existing Boid movement and StateTree by refactoring it to closely follow given path, making it execute "IsBoidLate" logic to accelerate towards its Battalion.
             Added "LostBoid" logic which makes the unit go at full speed through it's own, newly created control points in order to reach the Battalion ( It's an edge case that shouldn't happen very often ).
              I also added a StateTree Task for when Battalion spawns and exits building (has to have collision turned off and reach a proper spot).
         </li>
