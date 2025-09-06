@@ -1,6 +1,6 @@
 <div class="project-column">
     <h1>BattleChant</h1>
-    Unreal Engine Turn-based game in pre-release state. The game is made purely using Blueprints currently.
+    Unreal Engine Turn-based game in pre-release state.
     <br><br>
     <IMG class="image" SRC="Gifs/Battlechant.gif">
     <br>
@@ -9,14 +9,12 @@
     <h2>Features that I've implemented:</h2>
     <ul>
         <li>Grid-based system working with offset coordinates</li>
-        <li>Turn-based system integrated with GAS, supporting pathfinding, multilevel grids, turn management, and other turn-based mechanics (written in C++).</li>
+        <li>Turn-based system integrated with GAS, supporting pathfinding, multilevel grids, turn management, and other turn-based mechanics.</li>
         <li>Top-down custom camera, which can also be moved around using events from grid system</li>
         <li>Units that can be placed and anchored to the grid in the editor. They hold GAS abilities, have an Ability System Component, and display received damage via Gameplay Cues.</li>
         <li>Grid UI displaying tile markers for movement range and enemy locationsm, displaying spline when hovering on the grid.</li>
-        <li>Adaptive cursor that changes based on the hovered tile.</li>
-        <li>Custom user interface, including ability selection per NPC, a quest slider, and an End Turn button</li>
+        <li>Custom user interface using widgets, including ability selection per NPC, a quest slider, and an End Turn button</li>
         <li>Dialogue system for quest events and in-game conversations</li>
-        <li>Designed with multiplayer support in mind.</li>
     </ul>
     <br><br>
     Using delegates in Blueprints to change UI State:
